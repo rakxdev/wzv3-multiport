@@ -1,0 +1,7 @@
+services:
+  app:
+    build: .
+    command: bash start.sh
+    restart: on-failure
+    ports:
+      - ":8080"  # Map container port 8080 to host port (add required port you want)
